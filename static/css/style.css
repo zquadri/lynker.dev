@@ -1,0 +1,145 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 1.5em;
+  background: -webkit-linear-gradient(#51abff, #e128ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+#url-input {
+  background: #ffffff;
+  width: 60%;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+#shrink-btn {
+  background: linear-gradient(284.97deg, #51abff 0%, #98ceff 100%);
+  border-radius: 4px;
+  color: white;
+  padding: 15px 20px;
+  margin-right: 20px;
+  width: 15%;
+  font-size: 1em;
+  font-family: 'Varela Round', sans-serif;
+}
+#expand-btn {
+  background: linear-gradient(284.97deg, #e128ff 0%, #f198ff 100%);
+  border-radius: 4px;
+  color: white;
+  padding: 15px 20px;
+  width: 15%;
+  font-size: 1em;
+  font-family: 'Varela Round', sans-serif;
+}
+#expand-btn:hover,
+#shrink-btn:hover {
+  filter: brightness(115%);
+}
+
+#success-box {
+  font-family: 'Varela Round', sans-serif;
+  padding: 20px 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(96.51deg, #51abff 0%, #e128ff 100%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#error-box {
+  font-family: 'Varela Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(96.51deg, #ff5151 0%, #980f0f 100%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+footer {
+  font-family: 'Varela Round', sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+
+a {
+  color: #c4c4c4;
+}
+
+.lds-dual-ring {
+  width: 60px;
+  height: 60px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #51abff #e128ff;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
